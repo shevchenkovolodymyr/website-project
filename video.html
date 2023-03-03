@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бій</title>
+  <link rel="stylesheet" type="text/css" href="assest/css/style.css">
+</head>
+
+<body>
+  <div class="main">
+    <div class="header">
+      <div class="logo">
+        <h1><a href="/">Основи загальновійськового бою</a></h1>
+        <h2>Поняття про бій. Характеристика загальновійськового бою.</h2>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li class="active"><a>Відео</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site_content">
+      <div class="sidebar">
+        <div class="block">
+          <h2>Пошук</h2>
+          <form method="post" action="#" id="search_form">
+            <input type="search" id="search_field" name="search_field" placeholder="ваш зaпит">
+            <input type="submit" class="button" id="search_button" value="знaйти" />
+          </form>
+        </div>
+        <div class="block">
+          <h2>Вход</h2>
+          <form method="post" action="#" id="login">
+            <input type="text" name="login_field" placeholder="ваш логiн" />
+            <input type="password" name="login_field" placeholder="пapоль" />
+            <input type="submit" class="button" value="увiйти" />
+            <div class=passreg>
+              <span><a href="#">зaбули пароль</a></span> | <span><a href="#">Peєстрація</a></span>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="content">
+        <a href="show.html">
+          <h1> Поняття про бій. Характеристика загальновійськового бою.</h1>
+        </a>
+        <div class="last_video">
+          <div class="post">
+            <div class="post_content">
+              <p>
+              <p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <h2>Одеська ЗОШ №5</h2>
+    </div>
+    <script type="text/javascript">
+      var button = document.getElementById("search_button");
+      button.onclick = function () {
+        var input = document.getElementById("search_field");
+        var url = "https://www.google.com/search?q=" + input.value;
+        var google = window.open(url, "_blank"); google.focus();
+      }
+    </script>
+</body>
+
+</html>
